@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>Contato - Barbearia Alura</title>
+
+			<!-- reset.css, remove estilos que o navegador cria -->
+			<link rel="stylesheet" href="reset.css">
+
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+
+			<!-- cabeçalho da pagina -->
+			<header>
+				<div class="caixa">
+					<!-- tag <h1> envolve a tag da imagem <img> -->
+					<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1> <!-- “Alt” é uma alternativa para quem não consegue ver aquela imagem ou se aquela imagem não está carregando corretamente -->
+					<nav>
+						<ul>
+							<!-- tag <a> âncora, um link, que leva para outro ponto na internet -->
+							<li><a href="index.html">Home</a></li>
+							<li><a href="produtos.html">Produtos</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</nav>
+				</div>	 
+			</header>
+
+				<!-- conteúdo principal -->
+			<main>
+				<form> <!-- formulario para contato -->
+					<label for="nomesobrenome">Nome e Sobrenome</label> <!-- label - etiqueta/nome do campo -->
+					<input type="text" id="nomesobrenome" class="input-padrao" required>  <!-- input - entrada/ dos dados -->
+
+					<label for="email">Email</label>
+					<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">  <!-- sugestão de preenchimento dentro do input -->
+
+					<label for="telefone">Telefone</label>
+					<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!-- sugestão de preenchimento dentro do input -->
+
+					<label for="mensagem">Mensagem</label>
+					<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea> <!-- campo mensagem / possibilidade de colocar mais de uma linha de texto (campo de conteúdo)  -->
+
+					<fieldset> <!--  fieldset - referente à configuração de um ou mais campos referentes a um assunto específico.  -->
+						<legend>Como prefere o nosso contato?</legend>
+						<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>  <!-- radio box / marcando opções  -->
+
+						<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>  <!-- name - só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro -->
+						
+						<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked=>Whatsapp</label> <!-- checked - checkbox e queremos sempre fica marcado -->
+					</fieldset>
+
+					<fieldset>
+						<legend>Em qual horário prefere sem atendido?</legend> <!--  usamos para um título de um grupo de campos em qualquer formulário -->
+						<select>                      <!-- campo de seleção de um item - drop-down -->
+							<option>Manhã</option> 
+							<option>Tarde</option>
+							<option>Noite</option>
+						</select>
+					</fieldset>
+
+					<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label> <!-- checked - checkbox e queremos sempre fica marcado -->
+
+					<input type="submit" value="Enviar formulário" class="enviar">
+				</form>
+
+				<table> <!-- cria tabela -->
+					<thead> <!-- epresenta o cabeçalho da tabela -->
+						<tr> <!-- representa a linha da tabela -->
+							<th>Dia</th> <!-- representa a célula do cabeçalho da tabela -->
+							<th>Horário</th>
+						</tr>
+					</thead>
+					<tbody> <!-- representa o corpo da tabela -->
+						<tr>
+							<td>Segunda</td> <!-- representa a célula da tabela -->
+							<td>08h às 20h</td>
+						</tr>
+						<tr>
+							<td>Quarta</td>
+							<td>08h às 20h</td>
+						</tr>
+						<tr>
+							<td>Sexta</td>
+							<td>08h às 20h</td>
+						</tr>
+					</tbody>
+				</table>
+			</main>
+
+				<!-- rodapé da pagina -->
+			<footer>
+				<img src="logo-branco.png" alt="Logo da Barbearia Alura"> <!-- “Alt” é uma alternativa para quem não consegue ver aquela imagem ou se aquela imagem não está carregando corretamente --> 
+				<p class="copyright">&copy; Copyright Barbearia Alura 2021</p>  <!-- https://unicode-tabe.com/pt (icone de copyright) --> 
+			</footer>
+
+	</body>
+</html>

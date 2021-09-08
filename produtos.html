@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Produtos - Barbearia Alura</title>
+
+		<!-- reset.css, remove estilos que o navegador cria -->
+		<link rel="stylesheet" href="reset.css">
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<!-- cabeçalho da pagina -->
+		<header>
+			<div class="caixa">
+				<!-- tag <h1> envolve a tag da imagem <img> -->
+				<h1><img src="logo.png"></h1>
+				<nav>
+					<ul>
+						<!-- tag <a> âncora, um link, que leva para outro ponto na internet -->
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>	 
+		</header>
+
+		<!-- tag semântica main principal, mais importante -->
+		<main>
+			<ul class="produtos">
+				<li>
+					<h2>Cabelo</h2>
+					<img src="cabelo.jpg">
+					<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<p class="produto-preco">R$ 25,00</p>
+				</li>
+				<li>
+					<h2>Barba</h2>
+					<img src="barba.jpg">
+					<p class="produto-descricao">Corte e desenho profissional de barba</p>
+					<p class="produto-preco">R$ 18,00</p>
+				</li>
+				<li>
+					<h2>Cabelo + Barba</h2>
+					<img src="cabelo+barba.jpg">
+					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
+					<p class="produto-preco">R$ 35,00</p>
+				</li>
+			</ul>
+		</main>
+
+		<!-- rodapé da pagina -->
+		<footer>
+			<img src="logo-branco.png">
+			<p class="copyright">&copy; Copyright Barbearia Alura 2021</p>  <!-- https://unicode-tabe.com/pt (icone de copyright) --> 
+		</footer>
+
+	</body>
+</html>
